@@ -1,7 +1,7 @@
 ---
 - name: Install ansible selinux support library
   package:
-    name: libselinux-python
+    name: libselinux-python3
     state: present
   register: status
   until: status is succeeded
@@ -12,8 +12,8 @@
 - name: Install ansible selinux configure libraries
   package:
     name:
-      - policycoreutils-python
-      - libsemanage-python
+      - python3-policycoreutils
+      - python3-libsemanage
     state: present
   register: status
   until: status is succeeded

@@ -1,7 +1,7 @@
 ---
 packages_base:
   - yum-utils
-  - pygpgme
+  # - pygpgme
   - ca-certificates
 
 gitlab_runner_install_package: "{{ gitlab_runner_package }}\
